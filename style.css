@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+/* GLOBAL STYLES */
+*,
+*::before,
+*::after {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+width: 100%;
+font-size: 12px;
+}
+/* VARIABLES */
+:root {
+    --Light-red: hsl(356, 100%, 66%);
+    --Dark-Gray: hsl(0, 0%, 63%);
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+    --Very-Dark-Gray: hsl(0, 0%, 27%) ; 
+}
+/* header part */
+/* header part */
+header{
+    width: 100%; 
+}
+.header-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;  
+}
+.hamburger{
+    display: none;
+}
+.img{
+    display: none;
+}
+.img-1{
+    display: none;
+}
+.img-2{
+    display: none;
+}
+/* header right part */
+.header-left{
+    width: 60%;
+    background-image: url(./images/desktop-image-hero-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.logo{
+    padding-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    padding-top: 3rem;
+    padding-left: 4rem;
+    display: flex;
+    align-items: center; 
+}
+nav ul{
+    display: flex;
+    font-size: 12px;
+    font-family: 'Spartan';
+    font-weight: 700;
+}
+nav ul li{
+   list-style: none;
+    padding: 0 .5rem;
+}
+nav ul li a{
+   color: var(--White); 
+   text-decoration: none;
+}
+/* header right part */
+.header-right{
+    width: 40%;
+}
+.heading-right-1{
+    padding: 7rem;
+}
+.right-heading{
+    font-family: 'Spartan';
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--Very-Dark-Gray);
+}
+.right-para-1{
+    line-height: 2rem;
+    padding: 2rem 0rem 3rem 0rem;
+    font-family: 'Spartan';
+    font-weight: 500;
+    font-size: 18.5px;
+    color: var(--Dark-Gray);
+}
+.right-para-2{
+    font-family: 'Spartan';
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1rem;
+    color: var(--Very-Dark-Gray); 
+}
+.right-angle-image{
+    padding: 2rem;
+    width: 25%;
+    background-color: var(--Black);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/* Main section */
+/* Main section */
+.main-content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.content-imgae-1{
+    background-image: url(./images/image-about-dark.jpg); 
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 30%;
+}
+.content{
+    padding: 2.8rem;
+    width: 40%;
+}
+.content-heading{
+    padding-top: 1.8rem;
+    font-family: 'Spartan';
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--Very-Dark-Gray);
+   letter-spacing: .5rem;
+}
+.content-para{
+    line-height: 2rem;
+    font-family: Spartan;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--Dark-Gray);
+    padding-top: 2rem;
+}
+.content-imgae-2{
+     background-image: url(./images/image-about-light.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 30%;
+}
+/* media query */
+/* media query */
+@media screen and (max-width:600px) {
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        margin: 0;
+        /* padding: 0; */
+    }
+    .header-section{
+        width: 100%;
+        flex-direction: column;  
+    }
+    .hamburger{
+        display: inline;
+        margin-left: -6rem;
+    }
+    /* header right part */
+    .header-left{
+        width: 26.3rem;
+        height: 15rem;
+    }
+    .img{
+        width: 100%;
+        /* height: 100%; */
+        display: inline;
+        /* background-repeat: no-repeat; */
+    }
+    nav {
+        padding-top: 2rem;
+        padding-left: 7rem;
+    }
+    .img-1{
+        display: inline;
+    }
+    .img-2{
+        display: inline;
+        width: 420px;
+    }
+    .header-right{
+        padding: 2rem 0rem 2rem 2rem;
+        width: 100%;
+    }
+    .heading-right-1{
+        padding: 4rem 0rem 3rem 0rem;   
+    }
+    .right-heading{
+        font-size: 15px;
+    }
+    .right-angle-image{
+        display: none;
+    }
+    nav ul li{
+        display: none;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+   
+    .content{
+        padding: 2.8rem;
+        width: 100%;
+    }
+    .content-heading{
+        font-size: 20px;
+    letter-spacing: .3rem;
+    text-align: center;
+    }
+    .content-para{
+        font-size: 20px;
+    }
+    
+
+}
