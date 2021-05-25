@@ -30,16 +30,7 @@ header{
     display: flex;
     flex-direction: row;  
 }
-.hamburger{
-    display: none;
-}
-.img{
-    display: none;
-}
-.img-1{
-    display: none;
-}
-.img-2{
+.img, .img-1, .img-2, .hamburger{
     display: none;
 }
 /* header right part */
@@ -47,7 +38,8 @@ header{
     width: 60%;
     background-image: url(./images/desktop-image-hero-1.jpg);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 .logo{
     padding-right: 3rem;
@@ -79,12 +71,12 @@ nav ul li a{
     width: 40%;
 }
 .heading-right-1{
-    padding: 7rem;
+    padding: 2rem;
 }
 .right-heading{
     font-family: 'Spartan';
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.6rem;
     color: var(--Very-Dark-Gray);
 }
 .right-para-1{
@@ -120,8 +112,9 @@ nav ul li a{
 .content-imgae-1{
     background-image: url(./images/image-about-dark.jpg); 
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     width: 30%;
+    background-position: 50% 50%;
 }
 .content{
     padding: 2.8rem;
@@ -146,8 +139,9 @@ nav ul li a{
 .content-imgae-2{
      background-image: url(./images/image-about-light.jpg);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     width: 30%;
+    background-position: 50% 50%;
 }
 /* media query */
 /* media query */
